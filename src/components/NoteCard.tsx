@@ -7,7 +7,7 @@ import { type RouterOutputs } from "@/utils/api";
 type Note = RouterOutputs["note"]["getAll"][0];
 
 const NoteCard = ({ note, onDelete }: { note: Note; onDelete: () => void }) => {
-  const [isExpanded, setIsExpanded] = useState<boolean>(true);
+  const [isExpanded, setIsExpanded] = useState(true);
   return (
     <div className="card bg-base-100 mt-5 border border-gray-200 shadow-xl">
       <div className="card-body m-0 p-3">
